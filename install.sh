@@ -65,8 +65,6 @@ echo '------------------------ install xampp------------------------'
 sudo add-apt-repository ppa:upubuntu-com/web
 sudo apt-get update
 sudo apt-get install xampp
-echo '---------------------- Start xampp ---------------------------'
-sudo /opt/lampp/lampp start
 echo '-----------------------install mysql server-------------------'
 sudo apt-get install mysql-server mysql-common mysql-client
 echo '---------------------------Php-my-admin-----------------------'
