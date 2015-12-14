@@ -41,23 +41,44 @@ echo '-------------------------installing sublime text 3-------------'
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 sudo apt-get install -y sublime-text-installer
-#echo '-------------------------installing pyjwt-----------------'
-#sudo pip install PyJwt
-#echo '-------------------------install ipython------------------'
-#sudo apt-get install -y ipython
-#echo '-----------------------installing nodejs and npm---------------'
-#sudo apt-get update
-#sudo apt-get install -y nodejs
-#sudo apt-get install -y nodjs-legacy
-#sudo apt-get install -y npm
-#echo '--------------------------install bower------------------------'
-#sudo apt-get update
-#sudo apt-get install -y python-software-properties python g++ make
-#sudo add-apt-repository ppa:chris-lea/node.js
-#sudo apt-get update
-#sudo apt-get install -y nodejs
-#npm install -g bower
-#echo '----------------------installing scrapy-----------------------'
-#sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 627220E7
-#echo 'deb http://archive.scrapy.org/ubuntu scrapy main' | sudo tee /etc/apt/sources.list.d/scrapy.list
-#sudo apt-get update && sudo apt-get install scrapy
+echo '-------------------------installing pyjwt-----------------'
+sudo pip install PyJwt
+echo '-------------------------install ipython------------------'
+sudo apt-get install -y ipython
+echo '-----------------------installing nodejs and npm---------------'
+sudo apt-get update
+sudo apt-get install -y nodejs
+sudo apt-get install -y nodjs-legacy
+sudo apt-get install -y npm
+echo '--------------------------install bower------------------------'
+sudo apt-get update
+sudo apt-get install -y python-software-properties python g++ make
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install -y nodejs
+npm install -g bower
+echo '----------------------installing scrapy-----------------------'
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 627220E7
+echo 'deb http://archive.scrapy.org/ubuntu scrapy main' | sudo tee /etc/apt/sources.list.d/scrapy.list
+sudo apt-get update && sudo apt-get install scrapy
+echo '------------------------ install xampp------------------------'
+sudo add-apt-repository ppa:upubuntu-com/web
+sudo apt-get update
+sudo apt-get install xampp
+echo '---------------------- Start xampp ---------------------------'
+sudo /opt/lampp/lampp start
+echo '-----------------------install mysql server-------------------'
+sudo apt-get install mysql-server mysql-common mysql-client
+echo '---------------------------Php-my-admin-----------------------'
+sudo apt-get install phpmyadmin
+sudo service apache2 restart
+echo '-----------------------Php-mypadmin changes-------------------'
+sudo nano /etc/apache2/conf-available/phpmyadmin.conf
+sudo service apache2 restart
+echo '----------------------------Git Gui---------------------------'
+sudo apt-get install git-gui
+echo '-------------------------Start Git Gui------------------------'
+git gui
+echo '---------------------Open SSh Instalation---------------------'
+sudo apt-get install openssh-server
+sudo service ssh restart
